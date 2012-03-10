@@ -1,0 +1,29 @@
+/* colors
+	red: #f66;
+	yellow: #fc6;
+	white: #eee;
+	blue: #6cf;
+	black: #555;
+*/
+
+body {
+	font: 100%/24px "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+h1 {
+	font-size: 1.5em; /* 24px / 16px */
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size: 1.25em; /* 20px / 16px */
+	line-height: 1.2em; /* 24px / 20px */
+	margin-bottom: 1.2em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-bottom: 1.5em; /* 16px * 1.5em = 24px */
+}
