@@ -1,29 +1,235 @@
-/* colors
-	red: #f66;
-	yellow: #fc6;
-	white: #eee;
-	blue: #6cf;
-	black: #555;
+@charset "UTF-8";
+/*------------------------------------*\
+	CONTENTS
+\*------------------------------------*/
+/*
+	RESET
+	SHARED
+	TYPO
+	MAIN
+	 INTRO
+	 BASES
+	 HISTORIA
+	 CONTACTO
+	IMAGES
+	BRAND
 */
 
-body {
-	font: 100%/24px "Helvetica Neue", Helvetica, Arial, sans-serif
+
+
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+/*
+A more considered reset; more of a restart... 
+As per: csswizardry.com/2011/10/reset-restarted
+*/
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,hr,
+a,abbr,address,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strong,sub,sup,tt,var,
+b,u,i,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+	margin:0;
+	padding:0;
 }
+article,aside,details,figcaption,figure,footer,
+header,hgroup,menu,nav,section{
+	display:block;
+}
+
+strong,b,mark{
+	font-weight:bold;
+	font-style:inherit;
+}
+em,i,cite,q,address,dfn,var{
+	font-style:italic;
+	font-weight:inherit;
+}
+a,ins{
+	text-decoration:none;
+}
+img{
+	border:none;
+	font-style:italic;
+}
+input,
+select,option,optgroup,
+textarea{
+	font:inherit;
+}
+
+
+
+/*------------------------------------*\
+	$SHARED
+\*------------------------------------*/
+
+html {
+	height: 100%;
+	overflow-x: hidden;
+	font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif; 
+	color: hsla(0, 0%, 93%, 1.0);
+}
+
+ul {
+	list-style-position: inside;
+}
+
+label,
+.text-input,
+textarea,
+.btn {
+	cursor:pointer;
+}
+
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+	cursor:text;
+}
+
+.content {
+	max-width: 56.25em;  /* = 900px */
+	padding:0 1.875em;    /*  = 30px */ 
+	margin: 0 auto;
+}
+
+/*------------------------------------*\
+	$TYPO
+\*------------------------------------*/
+
 
 h1 {
 	font-size: 1.5em; /* 24px / 16px */
-	line-height: 1em;
-	margin-bottom: 1em;
+	line-height: 1;
+	margin-bottom: 1em; 
 }
 
 h2 {
 	font-size: 1.25em; /* 20px / 16px */
-	line-height: 1.2em; /* 24px / 20px */
-	margin-bottom: 1.2em;
+	line-height: 1.2; /* 24px / 20px */
+	margin-bottom: 1.2em; 
 }
 
 p {
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 1.5;
 	margin-bottom: 1.5em; /* 16px * 1.5em = 24px */
 }
+
+.giga {
+	font-family: 'Kameron', serif;
+	font-size: 3em; /* 48px / 16px */
+	line-height: 1.2;
+}
+
+
+/*------------------------------------*\
+	$MAIN
+\*------------------------------------*/
+
+	/***** $INTRO *****/
+
+.intro {
+	background: transparent url('../images/css/bg_intro.png') no-repeat center center;
+	position: relative;
+	top: 15%;
+	line-height: 28.125em;
+	padding-top: 2em;
+}
+
+	/***** $GRUPOS *****/
+
+.box {
+	display: inline-block;
+	margin: 1.5625em;
+	width: 12.5em;
+	height: 12.5em;
+	line-height: 12.5em;
+	background-color: rgba(238, 238, 238, 0.2);
+}
+
+.box a {
+	display: block;
+	font-size: 3em;
+	color: hsla(0, 0%, 93%, 1.0);
+}
+
+.box a:hover {
+	background-color: rgba(238,238,238, 0.5);
+}
+
+	/***** $BASES *****/
+
+.bases {
+	text-align: left;
+	list-style-position: inside;
+	max-height: 43,75em;
+}
+
+.bases > li {
+	padding-bottom: 1em;
+}
+
+.bases ul {
+	margin-left: 1em;	
+}
+
+/*
+.bases li ul, .bases li ul li {
+	padding: 0 0 0.75em 0.75em;
+}*/
+
+/*------------------------------------*\
+	$IMAGES
+\*------------------------------------*/
+
+img {
+	max-width:100%;
+	
+}
+
+.intro > img {
+	text-align: center;
+} 
+
+img[alt="UMHfest"] {	
+	vertical-align: middle;
+}
+
+/*------------------------------------*\
+	$BRAND
+\*------------------------------------*/
+
+.brand-grupos {
+	text-shadow: 2px 2px 0px hsla(47, 100%, 68%, 1.0),
+				 3px 3px 0px hsla(0, 0%, 93%, 1.0);
+	
+}
+
+.brand-bases {
+	text-shadow: 2px 2px 0px hsla(126, 64%, 67%, 1.0),
+				 3px 3px 0px hsla(0, 0%, 93%, 1.0);
+	
+}
+
+.brand-historia {
+	text-shadow: 2px 2px 0px hsla(200, 100%, 66%, 1.0),
+				 3px 3px 0px hsla(0, 0%, 93%, 1.0);
+	}
+
+.brand-contacto {
+	text-shadow: 2px 2px 0px hsla(0, 0%, 33%, 1.0),
+				 3px 3px 0px hsla(0, 0%, 93%, 1.0);	
+	}
+
+
+

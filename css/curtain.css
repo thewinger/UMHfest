@@ -1,0 +1,73 @@
+.curtains{
+    width: 100%;
+    z-index:1;
+    position:relative;
+}
+
+.curtains>li{
+    position: fixed;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index:1;
+    -webkit-backface-visibility:hidden; /* Remove if you got display issues */
+    box-shadow: 0 1px 14px 3px hsla(0, 0%, 33%, 1.0);
+    text-align: center;
+}
+.curtains>li:first-child{
+    z-index:2;
+}
+
+
+
+/*------------------------------------*\
+    $CURTAINS
+\*------------------------------------*/
+.curtains>li:nth-child(1) {
+    background-color: hsla(0, 89%, 68%, 1.0);
+}
+.curtains>li:nth-child(2) {
+    background-color: hsla(47, 100%, 68%, 1.0);
+}
+.curtains>li:nth-child(3) {
+    background-color: hsla(126, 64%, 67%, 1.0);
+}
+.curtains>li:nth-child(4) {
+    background-color: hsla(200, 100%, 66%, 1.0);
+}
+.curtains>li:nth-child(5) {
+    background-color: hsla(0, 0%, 33%, 1.0);
+}
+
+
+
+/*------------------------------------*\
+    $MENU
+\*------------------------------------*/
+.menu {
+    position: fixed;
+    bottom:1%;
+    z-index: 2;
+}
+
+ul.menu {
+    list-style: none inside;
+
+}
+
+.menu button {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40pñx;
+    background-color: hsla(0, 0%, 22%, 1.0);
+    position: relative;
+    text-align: center;
+    color: hsla(0, 0%, 93%, 1.0);
+    text-decoration: none;
+    border:0;
+    cursor:pointer;
+}
