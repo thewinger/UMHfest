@@ -268,9 +268,14 @@ img[alt="UMHfest"] {
 				 3px 3px 0px #eeeeee;
 	}
 
-.brand-contacto {
+.brand-fotos {
 	text-shadow: 2px 2px 0px #555555,
-				 3px 3px 0px #eeeeee;	
+				 3px 3px 0px #eeeeee;
+}
+
+.brand-contacto {
+	text-shadow: 2px 2px 0px #eeeeee,
+				 3px 3px 0px #555555;	
 	}
 
 /*------------------------------------*\

@@ -42,7 +42,8 @@
     background-color: #555;
 }
 .curtains>li:nth-child(6) {
-    background-color: #555;
+    background-color: #eee;
+    color: #555;
 }
 
 
