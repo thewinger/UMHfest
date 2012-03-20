@@ -10,9 +10,11 @@
 	 INTRO
 	 BASES
 	 HISTORIA
+	 FOTOS
 	 CONTACTO
 	IMAGES
 	BRAND
+	COLOR_SCHEME
 */
 
 
@@ -74,8 +76,13 @@ textarea{
 html {
 	height: 100%;
 	overflow-x: hidden;
-	font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif; 
-	color: hsla(0, 0%, 93%, 1.0);
+	font: 100% Cambria, Georgia, "Times New Roman", Times, serif;
+	color: #eeeeee;
+}
+
+a {
+	color: #eee;
+	text-decoration: underline;
 }
 
 ul {
@@ -100,17 +107,23 @@ textarea:focus {
 	max-width: 56.25em;  /* = 900px */
 	padding:0 1.875em;    /*  = 30px */ 
 	margin: 0 auto;
+	word-wrap: break-word;
 }
 
 /*------------------------------------*\
 	$TYPO
 \*------------------------------------*/
 
+h1,h2,h3 {
+	font-family: "Helvetica-neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
 
 h1 {
 	font-size: 1.5em; /* 24px / 16px */
 	line-height: 1;
-	margin-bottom: 1em; 
+	margin-bottom: 1em;
+	text-align: center;
 }
 
 h2 {
@@ -119,16 +132,22 @@ h2 {
 	margin-bottom: 1.2em; 
 }
 
+h3 {
+	font-size:1.125em; /* 18px / 16px */
+	line-height: 1.333;
+	margin-bottom: 1em;
+}
+
 p {
-	font-size: 1em;
+	font-size: 1em; /* 16px *//
 	line-height: 1.5;
 	margin-bottom: 1.5em; /* 16px * 1.5em = 24px */
 }
 
-.giga {
-	font-family: 'Kameron', serif;
+.giga { 
 	font-size: 3em; /* 48px / 16px */
-	line-height: 1.2;
+	line-height: 1;
+	margin: 0.5em 0;
 }
 
 
@@ -150,17 +169,19 @@ p {
 
 .box {
 	display: inline-block;
-	margin: 1.5625em;
 	width: 12.5em;
 	height: 12.5em;
 	line-height: 12.5em;
+	margin: 1.5625em;
 	background-color: rgba(238, 238, 238, 0.2);
+	border: 0.5em solid rgba(238,238,238,0.5);
 }
 
 .box a {
 	display: block;
 	font-size: 3em;
-	color: hsla(0, 0%, 93%, 1.0);
+	color: #eeeeee;
+	text-decoration: none;
 }
 
 .box a:hover {
@@ -169,24 +190,41 @@ p {
 
 	/***** $BASES *****/
 
-.bases {
+.text-wrap {
+	width: 33em;
+	max-width: 35em;
+	min-width: 25em;
 	text-align: left;
 	list-style-position: inside;
-	max-height: 43,75em;
+	padding: 0 20em 5em 20em;
 }
 
-.bases > li {
+.text-wrap > ol > li {
 	padding-bottom: 1em;
 }
 
-.bases ul {
+.text-wrap ul {
 	margin-left: 1em;	
 }
 
-/*
-.bases li ul, .bases li ul li {
-	padding: 0 0 0.75em 0.75em;
-}*/
+	/***** $FOTOS *****/
+
+#galleria {
+	width: 900px;
+	height: 650px;
+}
+
+	/***** $CONTACTO *****/
+
+iframe {
+	float: left;
+}
+
+#contacto {
+	float: right;
+	text-align: left;
+	margin-left: 1em;
+}
 
 /*------------------------------------*\
 	$IMAGES
@@ -199,37 +237,50 @@ img {
 
 .intro > img {
 	text-align: center;
+	vertical-align: top;
 } 
 
 img[alt="UMHfest"] {	
 	vertical-align: middle;
+	margin: 150px;
 }
+
+
 
 /*------------------------------------*\
 	$BRAND
 \*------------------------------------*/
 
 .brand-grupos {
-	text-shadow: 2px 2px 0px hsla(47, 100%, 68%, 1.0),
-				 3px 3px 0px hsla(0, 0%, 93%, 1.0);
+	text-shadow: 2px 2px 0px #ffdc5e,
+				 3px 3px 0px #eeeeee;
 	
 }
 
 .brand-bases {
-	text-shadow: 2px 2px 0px hsla(126, 64%, 67%, 1.0),
-				 3px 3px 0px hsla(0, 0%, 93%, 1.0);
+	text-shadow: 2px 2px 0px #75e180,
+				 3px 3px 0px #eeeeee;
 	
 }
 
 .brand-historia {
-	text-shadow: 2px 2px 0px hsla(200, 100%, 66%, 1.0),
-				 3px 3px 0px hsla(0, 0%, 93%, 1.0);
+	text-shadow: 2px 2px 0px #54c6ff,
+				 3px 3px 0px #eeeeee;
 	}
 
 .brand-contacto {
-	text-shadow: 2px 2px 0px hsla(0, 0%, 33%, 1.0),
-				 3px 3px 0px hsla(0, 0%, 93%, 1.0);	
+	text-shadow: 2px 2px 0px #555555,
+				 3px 3px 0px #eeeeee;	
 	}
 
+/*------------------------------------*\
+	$COLOR_SCHEME
 
+	red: 	#f66666;
+	yellow: #ffdc5e;
+	green:  #75e180;
+	blue: 	#54c6ff;
+	black: 	#555555;
+  	white: 	#eeeeee;
 
+\*------------------------------------*/

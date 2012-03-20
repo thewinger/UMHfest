@@ -14,7 +14,7 @@
     overflow: hidden;
     z-index:1;
     -webkit-backface-visibility:hidden; /* Remove if you got display issues */
-    box-shadow: 0 1px 14px 3px hsla(0, 0%, 33%, 1.0);
+    box-shadow: 0 1px 14px 3px #555;
     text-align: center;
 }
 .curtains>li:first-child{
@@ -27,21 +27,23 @@
     $CURTAINS
 \*------------------------------------*/
 .curtains>li:nth-child(1) {
-    background-color: hsla(0, 89%, 68%, 1.0);
+    background-color: #f66666;
 }
 .curtains>li:nth-child(2) {
-    background-color: hsla(47, 100%, 68%, 1.0);
+    background-color: #ffdc5e;
 }
 .curtains>li:nth-child(3) {
-    background-color: hsla(126, 64%, 67%, 1.0);
+    background-color: #75e180;
 }
 .curtains>li:nth-child(4) {
-    background-color: hsla(200, 100%, 66%, 1.0);
+    background-color: #54c6ff;
 }
 .curtains>li:nth-child(5) {
-    background-color: hsla(0, 0%, 33%, 1.0);
+    background-color: #555;
 }
-
+.curtains>li:nth-child(6) {
+    background-color: #555;
+}
 
 
 /*------------------------------------*\
@@ -62,8 +64,8 @@ ul.menu {
     display: block;
     height: 40px;
     width: 40px;
-    line-height: 40pñx;
-    background-color: hsla(0, 0%, 22%, 1.0);
+    line-height: 40px;
+    background-color: #555;
     position: relative;
     text-align: center;
     color: hsla(0, 0%, 93%, 1.0);

@@ -18,8 +18,13 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/curtain.css">
-  <link href='http://fonts.googleapis.com/css?family=Kameron:700' rel='stylesheet' type='text/css'>
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <script src="js/galleria/galleria-1.2.6.min.js"></script>
+
+  <script src="js/galleria/plugins/flickr/galleria.flickr.min.js"></script>
 </head>
 
 <body>
@@ -27,13 +32,8 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Tu navegador es <em>antiguo</em> <a href="http://browsehappy.com/">Actualizate a un nuevo navegador</a> o <a href="http://www.google.com/chromeframe/?redirect=true">instala Google Chrome Frame</a> para tener una mejor experiencia en esta web.</p><![endif]-->
   <div role="main">
-    <ul class="menu">
-      <li><button href="#up">&#8593;</button></li>
-      <li><button href="#down">&#8595;</button></li>
-    </ul>
     <ol class="curtains">
-
-      <li class="cover">
+       <li class="cover">
         <div class="content intro">
           <img src="images/logo_dele.png" alt="Delegación de Estudiantes" width="75" height="71">
           <img src="images/logo.png" alt="UMHfest" width="215" height="220">   
@@ -55,14 +55,14 @@
         </div>
       </li> <!-- # grupos -->
       
-      <li class="cover">
-        <div class="content">
+      <li>
+        <div class="content text-wrap">
           <h1 class="giga brand-bases">Bases</h1>
-          <ol class="bases">
-            <li>Para participar en el concurso, es necesario que al menos un miembro del grupo de m&uacute;sica pertenezca a la Comunidad Universitaria de la UMH: estudiante, P.D.I. o P.A.S.</li>
+          <ol>
+            <li>Para participar en el concurso, es necesario que al menos un miembro del grupo de m&uacute;sica pertenezca a la Comunidad Universitaria de la UMH ya sea estudiante, P.D.I. o P.A.S.</li>
             <li>Constar&aacute; de 6 grupos los cuales tocaran 3 canciones o 15 minutos cada uno. Los grupos ser&aacute;n elegidos por los miembros del jurado a partir de las maquetas entregadas previamente. El concierto se celebrar&aacute; el 4 de Mayo.</li>
-            <li>El plazo de inscripci&oacute;n quedar&aacute; abierto a partir del 23 de enero de 2012. Se deber&aacute; entregar un CD con 3 canciones (No tienen porque ser las que se usen en el concurso), en la Delegaci&oacute;n de Estudiantes antes del <strong>30 de Marzo de 2012</strong>. En caso de presentarse m&aacute;s de 6 grupos, el jurado har&aacute; una selecci&oacute;n, quedando el resto en reserva en orden de preferencia seg&uacute;n la decisi&oacute;n del jurado. La selecci&oacute;n se dar&aacute; a conocer el 20 de Abril de 2012. Los grupos de reserva entrar&aacute;n en concurso en el caso que falle alguno de los seleccionados.</li>
-            <li>Junto con el CD se deber&aacute; adjuntar:
+            <li class="step">El plazo de inscripci&oacute;n quedar&aacute; abierto a partir del 23 de enero de 2012. Se deber&aacute; entregar un CD con 3 canciones (No tienen porque ser las que se usen en el concurso), en la Delegaci&oacute;n de Estudiantes antes del <strong>30 de Marzo de 2012</strong>. En caso de presentarse m&aacute;s de 6 grupos, el jurado har&aacute; una selecci&oacute;n, quedando el resto en reserva en orden de preferencia seg&uacute;n la decisi&oacute;n del jurado. La selecci&oacute;n se dar&aacute; a conocer el 20 de Abril de 2012. Los grupos de reserva entrar&aacute;n en concurso en el caso que falle alguno de los seleccionados.</li>
+            <li class="step">Junto con el CD se deber&aacute; adjuntar:
               <ul>
                 <li>Datos personales del miembro que pertenezca a la Comunidad Universitaria (Nombre, DNI, Tel&eacute;fono de Contacto, E- mail de la Universidad).</li>
                 <li>Imagen en formato digital para colgar en la p&aacute;gina Web del Concurso.</li>
@@ -79,8 +79,7 @@
                 <li>Un miembro de la Organizaci&oacute;n.</li>
               </ul>
             </li>
-            <li><h3>Premios</h3>
-                Se seleccionar&aacute;n los tres mejores grupos, a los que se les har&aacute; entrega de una placa con su clasificaci&oacute;n, as&iacute; como de:<br/>
+            <li>Se seleccionar&aacute;n los tres mejores grupos, a los que se les har&aacute; entrega de una placa con su clasificaci&oacute;n, as&iacute; como de:
                 <ul>
                   <li>1er. Premio: 1.000 Euros</li>
                   <li>2do. Premio: 650 Euros</li>
@@ -94,8 +93,8 @@
       </li> <!-- #bases -->
 
       <li class="cover">
-        <div class="content">
-          <h1 class="giga brand-historia">Historia <span class="amp">&amp;</span> Fotos</h1>
+        <div class="content text-wrap">
+          <h1 class="giga brand-historia">Historia</h1>
           <p>El concurso de Grupos de M&uacute;sica naci&oacute; como excusa para conocer a las formaciones musicales amateurs de nuestra universidad, aunque finalmente se ha convertido en un referente cultural a nivel provincial.</p>
           <p>El <strong>UMHfest</strong> como se denomina en la actualidad, engloba al Concurso de Grupos de M&uacute;sica UMH y la Mostra de Grups en Valenci&agrave;.</p>
           <p>Desde sus comienzos (en el 2002) el Concurso de Grupos de M&uacute;sica de la UMH, ha pasado por muchas salas de toda la provincia, y ha visto nacer y crecer a bandas que en la actualidad son reconocidas a nivel nacional. Año tras año, ha ido haci&eacute;ndose hueco en las agendas de los amantes de la m&uacute;sica de todo Alicante.</p>
@@ -108,10 +107,56 @@
 
       <li class="cover">
         <div class="content">
+          <h1 class="giga brand-contacto">Fotos</h1>
+          <div id="galleria">
+            <!--<img src="images/galeria/UMHfest-1.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-2.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-3.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-4.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-5.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-6.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-7.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-8.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-9.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-10jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-11.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-12.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-13.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-14.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-15.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-16.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-17.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-18.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-19.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-20.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-21.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-22.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-23.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-24.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-25.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-26.jpg" alt="UMHfest">
+            <img src="images/galeria/UMHfest-27.jpg" alt="UMHfest">-->
+          </div>
+            <script>
+              Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+              $('#galleria').galleria({
+                debug: false,
+                flickr: 'set:72157629263917482',
+                flickrOptions: {
+                sort: 'date-posted-asc',
+                imageSize: 'big'
+                }
+              });
+            </script>
+        </div>
+      </li> <!-- #fotos -->
+
+      <li class="cover">
+        <div class="content">
           <h1 class="giga brand-contacto">Como Llegar <span>&amp;</span> Contacto</h1>
-          <iframe width="425" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?q=38.273362,-0.691688&amp;num=1&amp;sll=38.276143,-0.69094&amp;sspn=0.017519,0.032015&amp;ie=UTF8&amp;ll=38.273548,-0.692021&amp;spn=0.005492,0.009645&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+          <iframe width="50%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.es/maps?q=38.270883,-0.69363&amp;num=1&amp;t=h&amp;ie=UTF8&amp;z=14&amp;iwloc=near&amp;ll=38.270851,-0.693641&amp;output=embed"></iframe>
         
-          <section id="contacto" class="box">
+          <section id="contacto">
             <h1>Contacto</h1>
             <h4>Tel&eacute;fono</h4>
             <p><em>96 665 85 63</em></p>
@@ -131,8 +176,7 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+ 
 
   <!-- scripts concatenated and minified via build script -->
   <script src="js/curtain.js"></script>
@@ -140,11 +184,9 @@
     $(function(){
        $('.curtains').curtain({
            scrollSpeed: 450,
-           controls: '.menu',
        });
     });
   </script>
-  <script src="js/script.js"></script>
   <!-- end scripts -->
 </body>
 </html>
